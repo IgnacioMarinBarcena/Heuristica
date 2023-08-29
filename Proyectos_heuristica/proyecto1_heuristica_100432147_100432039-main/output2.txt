@@ -1,0 +1,374 @@
+Problem:    model
+Rows:       99
+Columns:    77 (74 integer, 49 binary)
+Non-zeros:  256
+Status:     INTEGER OPTIMAL
+Objective:  Coste = 585 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 Coste                     585                             
+     2 rutallega[parada_s1]
+                                   1                           1 
+     3 rutallega[parada_s2]
+                                   1                           1 
+     4 rutallega[parada_s3]
+                                   1                           1 
+     5 rutasale[parada_s1]
+                                   1                           1 
+     6 rutasale[parada_s2]
+                                   1                           1 
+     7 rutasale[parada_s3]
+                                   1                           1 
+     8 rutasparkingcolegio
+                                   0            -0             = 
+     9 maximorutas                 3                           3 
+    10 flujo_alumnos_capacidad[parking,parking]
+                                   0                          -0 
+    11 flujo_alumnos_capacidad[parking,parada_s1]
+                                  -3                          -0 
+    12 flujo_alumnos_capacidad[parking,parada_s2]
+                                  -4                          -0 
+    13 flujo_alumnos_capacidad[parking,parada_s3]
+                                  -3                          -0 
+    14 flujo_alumnos_capacidad[parking,colegio]
+                                   0                          -0 
+    15 flujo_alumnos_capacidad[parada_s1,parking]
+                                   0                          -0 
+    16 flujo_alumnos_capacidad[parada_s1,parada_s1]
+                                   0                          -0 
+    17 flujo_alumnos_capacidad[parada_s1,parada_s2]
+                                   0                          -0 
+    18 flujo_alumnos_capacidad[parada_s1,parada_s3]
+                                   0                          -0 
+    19 flujo_alumnos_capacidad[parada_s1,colegio]
+                                   0                          -0 
+    20 flujo_alumnos_capacidad[parada_s2,parking]
+                                   0                          -0 
+    21 flujo_alumnos_capacidad[parada_s2,parada_s1]
+                                   0                          -0 
+    22 flujo_alumnos_capacidad[parada_s2,parada_s2]
+                                   0                          -0 
+    23 flujo_alumnos_capacidad[parada_s2,parada_s3]
+                                   0                          -0 
+    24 flujo_alumnos_capacidad[parada_s2,colegio]
+                                  -2                          -0 
+    25 flujo_alumnos_capacidad[parada_s3,parking]
+                                   0                          -0 
+    26 flujo_alumnos_capacidad[parada_s3,parada_s1]
+                                   0                          -0 
+    27 flujo_alumnos_capacidad[parada_s3,parada_s2]
+                                   0                          -0 
+    28 flujo_alumnos_capacidad[parada_s3,parada_s3]
+                                   0                          -0 
+    29 flujo_alumnos_capacidad[parada_s3,colegio]
+                                   0                          -0 
+    30 flujo_alumnos_capacidad[colegio,parking]
+                                   0                          -0 
+    31 flujo_alumnos_capacidad[colegio,parada_s1]
+                                   0                          -0 
+    32 flujo_alumnos_capacidad[colegio,parada_s2]
+                                   0                          -0 
+    33 flujo_alumnos_capacidad[colegio,parada_s3]
+                                   0                          -0 
+    34 flujo_alumnos_capacidad[colegio,colegio]
+                                   0                          -0 
+    35 flujoparadas[parada_s1]
+                                   0            -0             = 
+    36 flujoparadas[parada_s2]
+                                   0            -0             = 
+    37 flujoparadas[parada_s3]
+                                   0            -0             = 
+    38 num_alumnos_parada[parada_s1]
+                                   3                           4 
+    39 num_alumnos_parada[parada_s2]
+                                   2                           4 
+    40 num_alumnos_parada[parada_s3]
+                                   3                           4 
+    41 alumno_parada_asignada[A1]
+                                   1             1             = 
+    42 alumno_parada_asignada[A2]
+                                   1             1             = 
+    43 alumno_parada_asignada[A3]
+                                   1             1             = 
+    44 alumno_parada_asignada[A4]
+                                   1             1             = 
+    45 alumno_parada_asignada[A5]
+                                   1             1             = 
+    46 alumno_parada_asignada[A6]
+                                   1             1             = 
+    47 alumno_parada_asignada[A7]
+                                   1             1             = 
+    48 alumno_parada_asignada[A8]
+                                   1             1             = 
+    49 asig_alumno_parada_posibilidad[A1,parada_s1]
+                                   1                           1 
+    50 asig_alumno_parada_posibilidad[A1,parada_s2]
+                                   0                          -0 
+    51 asig_alumno_parada_posibilidad[A1,parada_s3]
+                                   0                          -0 
+    52 asig_alumno_parada_posibilidad[A2,parada_s1]
+                                   1                           1 
+    53 asig_alumno_parada_posibilidad[A2,parada_s2]
+                                   0                          -0 
+    54 asig_alumno_parada_posibilidad[A2,parada_s3]
+                                   0                          -0 
+    55 asig_alumno_parada_posibilidad[A3,parada_s1]
+                                   1                           1 
+    56 asig_alumno_parada_posibilidad[A3,parada_s2]
+                                   0                          -0 
+    57 asig_alumno_parada_posibilidad[A3,parada_s3]
+                                   0                          -0 
+    58 asig_alumno_parada_posibilidad[A4,parada_s1]
+                                   0                           1 
+    59 asig_alumno_parada_posibilidad[A4,parada_s2]
+                                   1                           1 
+    60 asig_alumno_parada_posibilidad[A4,parada_s3]
+                                   0                           1 
+    61 asig_alumno_parada_posibilidad[A5,parada_s1]
+                                   0                           1 
+    62 asig_alumno_parada_posibilidad[A5,parada_s2]
+                                   1                           1 
+    63 asig_alumno_parada_posibilidad[A5,parada_s3]
+                                   0                           1 
+    64 asig_alumno_parada_posibilidad[A6,parada_s1]
+                                   0                          -0 
+    65 asig_alumno_parada_posibilidad[A6,parada_s2]
+                                   0                          -0 
+    66 asig_alumno_parada_posibilidad[A6,parada_s3]
+                                   1                           1 
+    67 asig_alumno_parada_posibilidad[A7,parada_s1]
+                                   0                          -0 
+    68 asig_alumno_parada_posibilidad[A7,parada_s2]
+                                   0                          -0 
+    69 asig_alumno_parada_posibilidad[A7,parada_s3]
+                                   1                           1 
+    70 asig_alumno_parada_posibilidad[A8,parada_s1]
+                                   0                          -0 
+    71 asig_alumno_parada_posibilidad[A8,parada_s2]
+                                   0                          -0 
+    72 asig_alumno_parada_posibilidad[A8,parada_s3]
+                                   1                           1 
+    73 hermanos_misma_parada[parada_s1,A1]
+                                   0            -0             = 
+    74 hermanos_misma_parada[parada_s1,A2]
+                                   0            -0             = 
+    75 hermanos_misma_parada[parada_s1,A3]
+                                   0            -0             = 
+    76 hermanos_misma_parada[parada_s1,A4]
+                                   0            -0             = 
+    77 hermanos_misma_parada[parada_s1,A5]
+                                   0            -0             = 
+    78 hermanos_misma_parada[parada_s1,A6]
+                                   0            -0             = 
+    79 hermanos_misma_parada[parada_s1,A7]
+                                   0            -0             = 
+    80 hermanos_misma_parada[parada_s1,A8]
+                                   0            -0             = 
+    81 hermanos_misma_parada[parada_s2,A1]
+                                   0            -0             = 
+    82 hermanos_misma_parada[parada_s2,A2]
+                                   0            -0             = 
+    83 hermanos_misma_parada[parada_s2,A3]
+                                   0            -0             = 
+    84 hermanos_misma_parada[parada_s2,A4]
+                                   0            -0             = 
+    85 hermanos_misma_parada[parada_s2,A5]
+                                   0            -0             = 
+    86 hermanos_misma_parada[parada_s2,A6]
+                                   0            -0             = 
+    87 hermanos_misma_parada[parada_s2,A7]
+                                   0            -0             = 
+    88 hermanos_misma_parada[parada_s2,A8]
+                                   0            -0             = 
+    89 hermanos_misma_parada[parada_s3,A1]
+                                   0            -0             = 
+    90 hermanos_misma_parada[parada_s3,A2]
+                                   0            -0             = 
+    91 hermanos_misma_parada[parada_s3,A3]
+                                   0            -0             = 
+    92 hermanos_misma_parada[parada_s3,A4]
+                                   0            -0             = 
+    93 hermanos_misma_parada[parada_s3,A5]
+                                   0            -0             = 
+    94 hermanos_misma_parada[parada_s3,A6]
+                                   0            -0             = 
+    95 hermanos_misma_parada[parada_s3,A7]
+                                   0            -0             = 
+    96 hermanos_misma_parada[parada_s3,A8]
+                                   0            -0             = 
+    97 alumnosparada[parada_s1]
+                                   0            -0             = 
+    98 alumnosparada[parada_s2]
+                                   0            -0             = 
+    99 alumnosparada[parada_s3]
+                                   0            -0             = 
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 rutas[parking,parking]
+                    *              0             0             1 
+     2 rutas[parking,parada_s1]
+                    *              1             0             1 
+     3 rutas[parking,parada_s2]
+                    *              1             0             1 
+     4 rutas[parking,parada_s3]
+                    *              1             0             1 
+     5 rutas[parking,colegio]
+                    *              0             0             1 
+     6 rutas[parada_s1,parking]
+                    *              0             0             1 
+     7 rutas[parada_s1,parada_s1]
+                    *              0             0             1 
+     8 rutas[parada_s1,parada_s2]
+                    *              0             0             1 
+     9 rutas[parada_s1,parada_s3]
+                    *              0             0             1 
+    10 rutas[parada_s1,colegio]
+                    *              1             0             1 
+    11 rutas[parada_s2,parking]
+                    *              0             0             1 
+    12 rutas[parada_s2,parada_s1]
+                    *              0             0             1 
+    13 rutas[parada_s2,parada_s2]
+                    *              0             0             1 
+    14 rutas[parada_s2,parada_s3]
+                    *              0             0             1 
+    15 rutas[parada_s2,colegio]
+                    *              1             0             1 
+    16 rutas[parada_s3,parking]
+                    *              0             0             1 
+    17 rutas[parada_s3,parada_s1]
+                    *              0             0             1 
+    18 rutas[parada_s3,parada_s2]
+                    *              0             0             1 
+    19 rutas[parada_s3,parada_s3]
+                    *              0             0             1 
+    20 rutas[parada_s3,colegio]
+                    *              1             0             1 
+    21 rutas[colegio,parking]
+                    *              0             0             1 
+    22 rutas[colegio,parada_s1]
+                    *              0             0             1 
+    23 rutas[colegio,parada_s2]
+                    *              0             0             1 
+    24 rutas[colegio,parada_s3]
+                    *              0             0             1 
+    25 rutas[colegio,colegio]
+                    *              0             0             1 
+    26 flujo_alumnos[parking,parking]
+                    *              0             0               
+    27 flujo_alumnos[parking,parada_s1]
+                    *              1             0               
+    28 flujo_alumnos[parking,parada_s2]
+                    *              0             0               
+    29 flujo_alumnos[parking,parada_s3]
+                    *              1             0               
+    30 flujo_alumnos[parking,colegio]
+                    *              0             0               
+    31 flujo_alumnos[parada_s1,parking]
+                    *              0             0               
+    32 flujo_alumnos[parada_s1,parada_s1]
+                    *              0             0               
+    33 flujo_alumnos[parada_s1,parada_s2]
+                    *              0             0               
+    34 flujo_alumnos[parada_s1,parada_s3]
+                    *              0             0               
+    35 flujo_alumnos[parada_s1,colegio]
+                    *              4             0               
+    36 flujo_alumnos[parada_s2,parking]
+                    *              0             0               
+    37 flujo_alumnos[parada_s2,parada_s1]
+                    *              0             0               
+    38 flujo_alumnos[parada_s2,parada_s2]
+                    *              0             0               
+    39 flujo_alumnos[parada_s2,parada_s3]
+                    *              0             0               
+    40 flujo_alumnos[parada_s2,colegio]
+                    *              2             0               
+    41 flujo_alumnos[parada_s3,parking]
+                    *              0             0               
+    42 flujo_alumnos[parada_s3,parada_s1]
+                    *              0             0               
+    43 flujo_alumnos[parada_s3,parada_s2]
+                    *              0             0               
+    44 flujo_alumnos[parada_s3,parada_s3]
+                    *              0             0               
+    45 flujo_alumnos[parada_s3,colegio]
+                    *              4             0               
+    46 flujo_alumnos[colegio,parking]
+                    *              0             0               
+    47 flujo_alumnos[colegio,parada_s1]
+                    *              0             0               
+    48 flujo_alumnos[colegio,parada_s2]
+                    *              0             0               
+    49 flujo_alumnos[colegio,parada_s3]
+                    *              0             0               
+    50 flujo_alumnos[colegio,colegio]
+                    *              0             0               
+    51 paradas_asignadas[A1,parada_s1]
+                    *              1             0             1 
+    52 paradas_asignadas[A2,parada_s1]
+                    *              1             0             1 
+    53 paradas_asignadas[A3,parada_s1]
+                    *              1             0             1 
+    54 paradas_asignadas[A4,parada_s1]
+                    *              0             0             1 
+    55 paradas_asignadas[A5,parada_s1]
+                    *              0             0             1 
+    56 paradas_asignadas[A6,parada_s1]
+                    *              0             0             1 
+    57 paradas_asignadas[A7,parada_s1]
+                    *              0             0             1 
+    58 paradas_asignadas[A8,parada_s1]
+                    *              0             0             1 
+    59 paradas_asignadas[A1,parada_s2]
+                    *              0             0             1 
+    60 paradas_asignadas[A2,parada_s2]
+                    *              0             0             1 
+    61 paradas_asignadas[A3,parada_s2]
+                    *              0             0             1 
+    62 paradas_asignadas[A4,parada_s2]
+                    *              1             0             1 
+    63 paradas_asignadas[A5,parada_s2]
+                    *              1             0             1 
+    64 paradas_asignadas[A6,parada_s2]
+                    *              0             0             1 
+    65 paradas_asignadas[A7,parada_s2]
+                    *              0             0             1 
+    66 paradas_asignadas[A8,parada_s2]
+                    *              0             0             1 
+    67 paradas_asignadas[A1,parada_s3]
+                    *              0             0             1 
+    68 paradas_asignadas[A2,parada_s3]
+                    *              0             0             1 
+    69 paradas_asignadas[A3,parada_s3]
+                    *              0             0             1 
+    70 paradas_asignadas[A4,parada_s3]
+                    *              0             0             1 
+    71 paradas_asignadas[A5,parada_s3]
+                    *              0             0             1 
+    72 paradas_asignadas[A6,parada_s3]
+                    *              1             0             1 
+    73 paradas_asignadas[A7,parada_s3]
+                    *              1             0             1 
+    74 paradas_asignadas[A8,parada_s3]
+                    *              1             0             1 
+    75 alumno_parada[parada_s1]
+                                   3                             
+    76 alumno_parada[parada_s2]
+                                   2                             
+    77 alumno_parada[parada_s3]
+                                   3                             
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

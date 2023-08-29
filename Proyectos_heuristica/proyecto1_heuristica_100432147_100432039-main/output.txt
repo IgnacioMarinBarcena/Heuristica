@@ -1,0 +1,196 @@
+Problem:    model
+Rows:       37
+Columns:    50 (50 integer, 25 binary)
+Non-zeros:  142
+Status:     INTEGER OPTIMAL
+Objective:  Coste = 400 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 Coste                     400                             
+     2 rutallega[parada_s1]
+                                   1             1             = 
+     3 rutallega[parada_s2]
+                                   1             1             = 
+     4 rutallega[parada_s3]
+                                   1             1             = 
+     5 rutasale[parada_s1]
+                                   1             1             = 
+     6 rutasale[parada_s2]
+                                   1             1             = 
+     7 rutasale[parada_s3]
+                                   1             1             = 
+     8 rutasparkingcolegio
+                                   0            -0             = 
+     9 maximorutas                 2                           3 
+    10 flujo_alumnos_capacidad[parking,parking]
+                                   0                          -0 
+    11 flujo_alumnos_capacidad[parking,parada_s1]
+                                 -20                          -0 
+    12 flujo_alumnos_capacidad[parking,parada_s2]
+                                   0                          -0 
+    13 flujo_alumnos_capacidad[parking,parada_s3]
+                                 -10                          -0 
+    14 flujo_alumnos_capacidad[parking,colegio]
+                                   0                          -0 
+    15 flujo_alumnos_capacidad[parada_s1,parking]
+                                   0                          -0 
+    16 flujo_alumnos_capacidad[parada_s1,parada_s1]
+                                   0                          -0 
+    17 flujo_alumnos_capacidad[parada_s1,parada_s2]
+                                  -5                          -0 
+    18 flujo_alumnos_capacidad[parada_s1,parada_s3]
+                                   0                          -0 
+    19 flujo_alumnos_capacidad[parada_s1,colegio]
+                                   0                          -0 
+    20 flujo_alumnos_capacidad[parada_s2,parking]
+                                   0                          -0 
+    21 flujo_alumnos_capacidad[parada_s2,parada_s1]
+                                   0                          -0 
+    22 flujo_alumnos_capacidad[parada_s2,parada_s2]
+                                   0                          -0 
+    23 flujo_alumnos_capacidad[parada_s2,parada_s3]
+                                   0                          -0 
+    24 flujo_alumnos_capacidad[parada_s2,colegio]
+                                   0                          -0 
+    25 flujo_alumnos_capacidad[parada_s3,parking]
+                                   0                          -0 
+    26 flujo_alumnos_capacidad[parada_s3,parada_s1]
+                                   0                          -0 
+    27 flujo_alumnos_capacidad[parada_s3,parada_s2]
+                                   0                          -0 
+    28 flujo_alumnos_capacidad[parada_s3,parada_s3]
+                                   0                          -0 
+    29 flujo_alumnos_capacidad[parada_s3,colegio]
+                                   0                          -0 
+    30 flujo_alumnos_capacidad[colegio,parking]
+                                   0                          -0 
+    31 flujo_alumnos_capacidad[colegio,parada_s1]
+                                   0                          -0 
+    32 flujo_alumnos_capacidad[colegio,parada_s2]
+                                   0                          -0 
+    33 flujo_alumnos_capacidad[colegio,parada_s3]
+                                   0                          -0 
+    34 flujo_alumnos_capacidad[colegio,colegio]
+                                   0                          -0 
+    35 flujoparadas[parada_s1]
+                                  15            15             = 
+    36 flujoparadas[parada_s2]
+                                   5             5             = 
+    37 flujoparadas[parada_s3]
+                                  10            10             = 
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 rutas[parking,parking]
+                    *              0             0             1 
+     2 rutas[parking,parada_s1]
+                    *              1             0             1 
+     3 rutas[parking,parada_s2]
+                    *              0             0             1 
+     4 rutas[parking,parada_s3]
+                    *              1             0             1 
+     5 rutas[parking,colegio]
+                    *              0             0             1 
+     6 rutas[parada_s1,parking]
+                    *              0             0             1 
+     7 rutas[parada_s1,parada_s1]
+                    *              0             0             1 
+     8 rutas[parada_s1,parada_s2]
+                    *              1             0             1 
+     9 rutas[parada_s1,parada_s3]
+                    *              0             0             1 
+    10 rutas[parada_s1,colegio]
+                    *              0             0             1 
+    11 rutas[parada_s2,parking]
+                    *              0             0             1 
+    12 rutas[parada_s2,parada_s1]
+                    *              0             0             1 
+    13 rutas[parada_s2,parada_s2]
+                    *              0             0             1 
+    14 rutas[parada_s2,parada_s3]
+                    *              0             0             1 
+    15 rutas[parada_s2,colegio]
+                    *              1             0             1 
+    16 rutas[parada_s3,parking]
+                    *              0             0             1 
+    17 rutas[parada_s3,parada_s1]
+                    *              0             0             1 
+    18 rutas[parada_s3,parada_s2]
+                    *              0             0             1 
+    19 rutas[parada_s3,parada_s3]
+                    *              0             0             1 
+    20 rutas[parada_s3,colegio]
+                    *              1             0             1 
+    21 rutas[colegio,parking]
+                    *              0             0             1 
+    22 rutas[colegio,parada_s1]
+                    *              0             0             1 
+    23 rutas[colegio,parada_s2]
+                    *              0             0             1 
+    24 rutas[colegio,parada_s3]
+                    *              0             0             1 
+    25 rutas[colegio,colegio]
+                    *              0             0             1 
+    26 flujo_alumnos[parking,parking]
+                    *              0             0               
+    27 flujo_alumnos[parking,parada_s1]
+                    *              0             0               
+    28 flujo_alumnos[parking,parada_s2]
+                    *              0             0               
+    29 flujo_alumnos[parking,parada_s3]
+                    *             10             0               
+    30 flujo_alumnos[parking,colegio]
+                    *              0             0               
+    31 flujo_alumnos[parada_s1,parking]
+                    *              0             0               
+    32 flujo_alumnos[parada_s1,parada_s1]
+                    *              0             0               
+    33 flujo_alumnos[parada_s1,parada_s2]
+                    *             15             0               
+    34 flujo_alumnos[parada_s1,parada_s3]
+                    *              0             0               
+    35 flujo_alumnos[parada_s1,colegio]
+                    *              0             0               
+    36 flujo_alumnos[parada_s2,parking]
+                    *              0             0               
+    37 flujo_alumnos[parada_s2,parada_s1]
+                    *              0             0               
+    38 flujo_alumnos[parada_s2,parada_s2]
+                    *              0             0               
+    39 flujo_alumnos[parada_s2,parada_s3]
+                    *              0             0               
+    40 flujo_alumnos[parada_s2,colegio]
+                    *             20             0               
+    41 flujo_alumnos[parada_s3,parking]
+                    *              0             0               
+    42 flujo_alumnos[parada_s3,parada_s1]
+                    *              0             0               
+    43 flujo_alumnos[parada_s3,parada_s2]
+                    *              0             0               
+    44 flujo_alumnos[parada_s3,parada_s3]
+                    *              0             0               
+    45 flujo_alumnos[parada_s3,colegio]
+                    *             20             0               
+    46 flujo_alumnos[colegio,parking]
+                    *              0             0               
+    47 flujo_alumnos[colegio,parada_s1]
+                    *              0             0               
+    48 flujo_alumnos[colegio,parada_s2]
+                    *              0             0               
+    49 flujo_alumnos[colegio,parada_s3]
+                    *              0             0               
+    50 flujo_alumnos[colegio,colegio]
+                    *              0             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

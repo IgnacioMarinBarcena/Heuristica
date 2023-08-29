@@ -1,0 +1,49 @@
+/* PARTE 2 -> DATOS.dat*/
+data;
+/*Establecemos los valores = > Sección de datos*/
+
+set Localizaciones := parking parada_s1 parada_s2 parada_s3 colegio;
+set Paradas := parada_s1 parada_s2 parada_s3;
+set parking := parking;
+set colegio := colegio;
+set numero_alumnos := A1 A2 A3 A4 A5 A6 A7 A8;
+
+/*Datos del número de rutas que deben de salir y capacidad de los autobuses */
+param autobuses_disponibles := 3;
+param capacidad_maxima_autobuses := 4;
+
+/*Datos del coste de rutas que salen y del precio por km recorrido*/
+param precio_rutas 120;
+param precio_km_recorridos 5;
+
+/*Establecemos los parametros de la matriz de costes*/
+param coste_trayecto : parking parada_s1 parada_s2 parada_s3 colegio :=
+parking 10000 8 10 10 10000
+parada_s1 10000 10000 3 7 6
+parada_s2 10000 3 10000 5 7
+parada_s3 10000 7 5 10000 4
+colegio 10000 10000 10000 10000 10000;
+
+/*Establecemos los parametros de la matriz de hermanos*/
+param hermanos : A1 A2 A3 A4 A5 A6 A7 A8:=
+A1 0 0 0 0 0 0 0 0
+A2 0 0 0 0 0 0 0 0
+A3 0 0 0 0 0 0 0 0
+A4 0 0 0 0 1 0 0 0
+A5 0 0 0 1 0 0 0 0
+A6 0 0 0 0 0 0 0 0
+A7 0 0 0 0 0 0 0 0 
+A8 0 0 0 0 0 0 0 0;
+
+/*Establecemos los parametros de la matriz de posibilidades de alumnos*/
+param posibilidades_alumnos : parada_s1 parada_s2 parada_s3 :=
+A1 1 0 0
+A2 1 0 0
+A3 1 0 0
+A4 1 1 1
+A5 1 1 1
+A6 0 0 1
+A7 0 0 1
+A8 0 0 1;
+
+end;

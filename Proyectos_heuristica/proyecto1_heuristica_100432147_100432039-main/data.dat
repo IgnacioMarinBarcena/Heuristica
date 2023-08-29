@@ -1,0 +1,34 @@
+/* PARTE 1 -> DATOS.dat*/
+data;
+/*Establecemos los valores = > Sección de datos*/
+
+set Localizaciones := parking parada_s1 parada_s2 parada_s3 colegio;
+set Paradas := parada_s1 parada_s2 parada_s3;
+set parking := parking;
+set colegio := colegio;
+
+/*Datos del número de rutas que deben de salir y capacidad de los autobuses */
+param autobuses_disponibles := 3;
+param capacidad_maxima_autobuses := 20;
+
+/*Datos del coste de rutas que salen y del precio por km recorrido*/
+param precio_rutas 120;
+param precio_km_recorridos 5;
+
+/*Establecemos los parametros del vector alumnos*/
+param alumno_parada :=
+parking 0
+parada_s1 15
+parada_s2 5
+parada_s3 10
+colegio 0;
+
+/*Establecemos los parametros de la matriz de costes*/
+param coste_trayecto : parking parada_s1 parada_s2 parada_s3 colegio :=
+parking 10000 8 10 10 10000
+parada_s1 10000 10000 3 7 6
+parada_s2 10000 3 10000 5 7
+parada_s3 10000 7 5 10000 4
+colegio 10000 10000 10000 10000 10000;
+
+end;
